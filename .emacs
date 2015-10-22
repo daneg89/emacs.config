@@ -23,4 +23,8 @@
 ; Helm Specific
 (global-set-key (kbd "M-x") 'helm-M-x)
 
+; Backups moved to different directories
 (setq backup-directory-alist `(("." . "/tmp")))
+
+; Hide initial welcome to Emacs dialog
+(setq inhibit-startup-message t)
