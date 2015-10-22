@@ -22,3 +22,5 @@
 
 ; Helm Specific
 (global-set-key (kbd "M-x") 'helm-M-x)
+
+(setq backup-directory-alist `(("." . "/tmp")))
