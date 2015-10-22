@@ -11,6 +11,10 @@
 (require 'helm)
 (helm-mode 1)
 
+(require 'color-theme)
+(setq color-theme-is-global t)
+(color-theme-initialize)
+
 (projectile-global-mode)
 
 ; Key Bindings
