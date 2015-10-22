@@ -50,3 +50,5 @@
 (setq inhibit-startup-message t) ; Remove startup message
 
 (global-hl-line-mode 1) ; Highlight current line
+(set-face-background 'hl-line "#111111") ; Highlight color
+(set-face-foreground 'highlight nil) ; Keep syntax highlighting
