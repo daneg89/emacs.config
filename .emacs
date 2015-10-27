@@ -49,6 +49,11 @@
 
 (setq inhibit-startup-message t) ; Remove startup message
 
+(setq indent-tabs-mode t) ; use tabs for indentation
+(setq-default tab-width 4) ; Good tab width
+
 (global-hl-line-mode 1) ; Highlight current line
 (set-face-background 'hl-line "#111111") ; Highlight color
 (set-face-foreground 'highlight nil) ; Keep syntax highlighting
+
+(setq column-number-mode t) ; Show column number in the mode line
