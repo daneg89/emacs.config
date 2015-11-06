@@ -1,4 +1,5 @@
 ; Package Related
+(require 'cl)
 (require 'package)
 (push '("marmalade" . "http://marmalade-repo.org/packages/")
       package-archives )
