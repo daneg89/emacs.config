@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ ! -d "${HOME}/.emacs.d" ]; then
+	mkdir ~/.emacs.d
+fi
+
+cp *.el ~/.emacs.d/
+cp .emacs ~/.emacs
