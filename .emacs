@@ -1,5 +1,9 @@
 ; Package Related
 (require 'cl)
+
+; Custom files
+(load "~/.emacs.d/default.el")
+
 (require 'package)
 (push '("marmalade" . "http://marmalade-repo.org/packages/")
       package-archives )
