@@ -33,6 +33,8 @@
 
 (global-set-key (kbd "M-x") 'helm-M-x) ; Helm Specific
 
+
+
 (setq backup-directory-alist `(("." . "/tmp")))
 
 (custom-set-variables
@@ -54,12 +56,20 @@
 
 (setq inhibit-startup-message t) ; Remove startup message
 
+; Indentation
+
 (setq indent-tabs-mode t) ; use tabs for indentation
 (setq-default tab-width 4) ; Good tab width
+
+; User Interface
 
 (global-hl-line-mode 1) ; Highlight current line
 (set-face-background 'hl-line "#111111") ; Highlight color
 (set-face-foreground 'highlight nil) ; Keep syntax highlighting
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+
+; Windows
 
 (setq column-number-mode t) ; Show column number in the mode line
 
