@@ -64,6 +64,7 @@
 ; User Interface
 
 (global-hl-line-mode 1) ; Highlight current line
+(set-face-attribute 'region nil :background "#558855" :foreground "#111111") ; Selection color
 (set-face-background 'hl-line "#111111") ; Highlight color
 (set-face-foreground 'highlight nil) ; Keep syntax highlighting
 (menu-bar-mode -1)
