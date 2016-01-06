@@ -55,6 +55,7 @@
 ; General
 
 (setq inhibit-startup-message t) ; Remove startup message
+(setq confirm-kill-emacs 'y-or-n-p) ; Prompt when closing emacs
 
 ; Indentation
 
