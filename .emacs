@@ -57,6 +57,9 @@
 (setq inhibit-startup-message t) ; Remove startup message
 (setq confirm-kill-emacs 'y-or-n-p) ; Prompt when closing emacs
 
+; Delete whitespace from buffer when saved
+(add-hook 'write-file-functions 'delete-trailing-whitespace)
+
 ; Indentation
 
 (setq indent-tabs-mode t) ; use tabs for indentation
