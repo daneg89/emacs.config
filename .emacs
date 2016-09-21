@@ -15,6 +15,7 @@
 (evil-mode 1)
 
 (require 'helm)
+(require 'helm-config)
 (helm-mode 1)
 
 (require 'color-theme)
@@ -31,7 +32,9 @@
 ; Key Bindings
 (global-set-key (kbd "C-x w") 'other-window)
 
-(global-set-key (kbd "M-x") 'helm-M-x) ; Helm Specific
+; Helm Specific
+(global-set-key (kbd "C-x C-f") 'helm-find-files)
+(global-set-key (kbd "M-x") 'helm-M-x)
 
 
 
@@ -56,14 +59,15 @@
 
 (setq inhibit-startup-message t) ; Remove startup message
 (setq confirm-kill-emacs 'y-or-n-p) ; Prompt when closing emacs
+(setq auto-save-default nil) ; Don't autosave files
 
 ; Delete whitespace from buffer when saved
 (add-hook 'write-file-functions 'delete-trailing-whitespace)
 
 ; Indentation
 
-(setq indent-tabs-mode t) ; use tabs for indentation
-(setq-default tab-width 4) ; Good tab width
+(setq-default indent-tabs-mode nil) ; don't use tabs for indentation
+(setq-default tab-width 2) ; Good tab width
 
 ; User Interface
 
@@ -79,3 +83,6 @@
 (setq column-number-mode t) ; Show column number in the mode line
 
 (windmove-default-keybindings) ; Use Shift + Arrow keys to move between windows
+
+; Org Mode
+(setq-default org-M-RET-may-split-line nil) ; don't split current line when adding next sub-item
